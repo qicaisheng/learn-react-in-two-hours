@@ -1,4 +1,7 @@
 /**
  * Created by stong on 1/24/17.
  */
-console.log('abc')
+
+import { sum } from './sum'
+
+console.log(sum(1, 2));
