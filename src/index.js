@@ -2,6 +2,7 @@
  * Created by stong on 1/24/17.
  */
 import React from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
+import {Hello} from './components/Hello.js'
 
-ReactDOM.render(<h1>foo</h1>, document.getElementById('app'))
+render(<Hello name="world" />, document.getElementById('app'))
