@@ -10,14 +10,14 @@ test('Hello component should render', t => {
 });
 
 test('TodoList component should render', t => {
-    const todos = [{
+    const todoItems = [{
         text: 'first todo'
     },{
         text: 'second todo'
     }]
-    const todoItems = shallow(<TodoList todos={todos} />)
-    t.is(todoItems.find('li').length, 2)
-    t.true(todoItems.find('li').at(0).contains(todos[0].text))
-    t.true(todoItems.find('li').at(1).contains(todos[1].text))
+    const todosComponent = shallow(<TodoList todos={todoItems} />)
+    t.is(todosComponent.find('li').length, 2)
+    t.true(todosComponent.find('li').at(0).contains(todoItems[0].text))
+    t.true(todosComponent.find('li').at(1).contains(todoItems[1].text))
 });
 
